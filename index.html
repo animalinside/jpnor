@@ -1,135 +1,72 @@
 
+
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
+<script async defer src="https://tools.luckyorange.com/core/lo.js?site-id=a32b9546"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LAZEN</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600&display=swap" rel="stylesheet">
+<title>Petii.site - Pet Care in Japan</title>
 
 <style>
 body {
-  margin: 0;
-  font-family: 'Noto Serif JP', serif;
-  background: #f4f1ed;
-  color: #222;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f7;
+    color: #222;
+    line-height: 1.6;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 60px;
-  border-bottom: 1px solid #ddd;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
 }
 
-header h1 { letter-spacing: 3px; }
+nav {
+    background: #111;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
 nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 14px;
 }
 
-.hero { text-align: center; padding: 60px 20px; }
-
-.hero img {
-  width: 80%;
-  border-radius: 15px;
-  margin-top: 30px;
+nav a:hover {
+    background: #333;
 }
 
-.buttons button {
-  margin: 10px;
-  padding: 10px 18px;
-  border-radius: 20px;
-  border: none;
-  background: #444;
-  color: white;
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
 }
 
-.section { padding: 60px 20px; text-align: center; }
-
-.cards {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
+.section {
+    margin-bottom: 40px;
 }
 
-.card {
-  background: white;
-  padding: 20px;
-  width: 250px;
-  border-radius: 10px;
-}
-
-.card img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-.about {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-  padding: 60px;
-  flex-wrap: wrap;
-}
-
-.about img {
-  width: 320px;
-  border-radius: 15px;
-}
-
-.steps {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.step {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  width: 200px;
-}
-
-.class {
-  display: flex;
-  gap: 20px;
-  margin: 20px auto;
-  max-width: 900px;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  align-items: center;
-}
-
-.class img {
-  width: 150px;
-  border-radius: 10px;
-}
-
-.gallery {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.gallery img {
-  width: 260px;
-  border-radius: 10px;
+h1, h2, h3 {
+    color: #ff0000;
 }
 
 footer {
-  background: #111;
-  color: white;
-  padding: 40px;
-  text-align: center;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+@media(max-width:600px){
+    nav { flex-direction: column; align-items:center; }
 }
 </style>
 </head>
@@ -137,130 +74,293 @@ footer {
 <body>
 
 <header>
-  <h1>LAZEN</h1>
-  <nav>
-    <a href="#">ホーム</a>
-    <a href="#">レッスン</a>
-    <a href="#">料金</a>
-    <a href="#">予約</a>
-  </nav>
+<h1>Petii.site</h1>
+<p>Practical, easy-to-understand pet care information for everyday life in Japan, created for individuals who want simple and responsible guidance.</p>
 </header>
 
-<section class="hero">
-  <h2>福岡・天神、博多の風とともに、呼吸を深めるスタジオ。</h2>
-  <p>静かな空間で、自分と向き合う時間を。</p>
+<nav>
+<a href="#">Home</a>
+<a href="#">Guides</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+<a href="#">Privacy</a>
+<a href="#">Disclaimer</a>
+</nav>
 
-  <div class="buttons">
-    <button>クラス一覧</button>
-    <button>体験レッスン</button>
-  </div>
+<div class="container">
 
-  <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?q=80&w=1200">
+<section id="home" class="section">
+<h2>Welcome</h2>
+<p>
+Petii.site is a simple informational website created to share basic pet care knowledge for people living in Japan. This website is independently created and managed by one individual, and it does not represent a company, business, or organization of any kind.
+</p>
+<p>
+The content available on this site is free for everyone to access. It is designed to provide general guidance about everyday pet care, including routines, habits, and responsibilities that come with keeping animals at home. The information is written in a straightforward way so that beginners can easily understand it.
+</p>
+<p>
+Pet care can be different for every household depending on living space, lifestyle, and the type of pet. For that reason, the information shared here is general in nature and should be used as a reference rather than a fixed rule. This website does not promise specific results, but it aims to support better awareness and responsible care through simple explanations.
+</p>
 </section>
 
-<section class="section">
-  <h2>選ばれる理由</h2>
-  <div class="cards">
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3">
-      少人数制で丁寧な指導
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773">
-      落ち着いた空間
-    </div>
-   
-  </div>
+
+
+
+
+<section id="blogs" class="section">
+<h2>Pet Care Guides</h2>
+
+<h3>1. Understanding Basic Pet Needs</h3>
+<p>
+Caring for a pet begins with understanding its daily needs in a realistic and practical way. In Japan, where many people live in apartments or compact homes, pet care often requires a thoughtful approach to space, time, and routine. Regardless of whether you have a dog, cat, or a smaller animal, the fundamentals remain similar. Every pet needs access to clean water, appropriate food, a safe environment, and regular attention from its owner.
+</p>
+<p>
+One of the most important aspects of pet care is consistency. Animals tend to feel more secure when their daily routine remains stable. Feeding at similar times each day, maintaining regular sleeping patterns, and offering consistent interaction can help pets feel comfortable in their environment. Sudden changes in routine, such as irregular feeding or unpredictable schedules, may lead to confusion or stress.
+</p>
+<p>
+Living conditions also play a significant role. In many Japanese homes, pets share close living spaces with their owners. This makes cleanliness especially important. Regularly cleaning food bowls, bedding, and surrounding areas helps maintain hygiene and reduces the chance of discomfort. It also creates a more pleasant environment for both the pet and the owner.
+</p>
+<p>
+Temperature and ventilation should not be overlooked. Seasonal changes in Japan can be quite noticeable, from humid summers to cooler winters. Pets may react differently to these changes, so it is important to observe their comfort levels and make small adjustments when needed.
+</p>
+<p>
+Understanding these basic needs does not require expert knowledge. It simply involves paying attention, being consistent, and making gradual improvements over time. Each pet is different, so observing their behavior and adjusting care accordingly is often the most practical approach.
+</p>
+
+<h3>2. Feeding Practices and Nutrition</h3>
+<p>
+Feeding is one of the most regular and important parts of caring for a pet. In Japan, pet owners have access to a wide range of food options, but choosing what works best often depends on the individual animal. Factors such as age, size, activity level, and general condition all influence how much and what type of food a pet may need.
+</p>
+<p>
+A helpful starting point is to follow the feeding guidelines provided on pet food packaging. These recommendations are usually designed to give a general idea of portion sizes. However, it is equally important to observe the pet’s response. Some animals may require slight adjustments depending on their energy levels or body condition.
+</p>
+<p>
+Maintaining a consistent feeding schedule can support a stable routine. Feeding at the same times each day helps pets understand when to expect meals, which may reduce restlessness or overeating. Sudden changes in diet should be avoided, as they can sometimes cause digestive discomfort. If a change is necessary, introducing new food gradually is often a safer approach.
+</p>
+<p>
+Clean water should always be available. Water bowls need to be refreshed regularly and kept clean to ensure hygiene. This is particularly important in indoor environments where pets rely entirely on the owner for their daily needs.
+</p>
+<p>
+It is also useful to avoid overfeeding. While it may seem harmless, giving excessive portions can lead to long-term health concerns. Monitoring portion sizes and observing behavior after meals can provide helpful insight.
+</p>
+<p>
+Feeding is not just about providing food—it is about creating a balanced and consistent habit that supports the pet’s overall well-being without unnecessary complications.
+</p>
+
+<h3>3. Creating a Safe Home Environment</h3>
+<p>
+A safe home environment is essential for pets, particularly in indoor living spaces common in Japan. Because many homes are compact, organizing the environment thoughtfully can help prevent accidents and create a comfortable space for both pets and owners.
+</p>
+<p>
+One of the first steps is identifying potential hazards. Items such as exposed wires, small objects, and household chemicals should be kept out of reach. Pets are naturally curious, and even small items can pose a risk if left unattended. Keeping living areas organized reduces these risks significantly.
+</p>
+<p>
+Providing a designated resting space can also improve comfort. This does not need to be elaborate. A simple bed or soft corner where the pet can relax without disturbance is often enough. Having a consistent place to rest helps pets feel secure and reduces unnecessary stress.
+</p>
+<p>
+Windows and balconies are common features in Japanese homes, and they should be secured properly. Even calm pets may become curious and attempt to climb or jump. Ensuring these areas are safe can prevent avoidable accidents.
+</p>
+<p>
+Temperature control is another factor to consider. Summers can be humid, and winters may become quite cold depending on the region. Monitoring indoor conditions and adjusting accordingly can help maintain a comfortable environment.
+</p>
+<p>
+Creating a safe home does not require major changes. Small, consistent adjustments can make a significant difference in ensuring that pets live in a stable and secure environment.
+</p>
+
+<h3>4. Daily Exercise and Activity</h3>
+<p>
+Daily activity plays an important role in maintaining a pet’s physical and mental balance. For many pets, especially dogs, regular movement helps support overall well-being. In Japan, where outdoor space may be limited in urban areas, pet owners often adapt routines to fit their surroundings.
+</p>
+<p>
+Walking is one of the most common forms of exercise. Even short, consistent walks can be beneficial. The goal is not necessarily long distances, but rather regular movement that suits the pet’s condition. Some pets may prefer shorter, more frequent outings instead of a single long walk.
+</p>
+<p>
+Indoor activity can also be valuable, particularly during unfavorable weather. Playing with simple toys or engaging in gentle interaction can provide mental stimulation. This helps reduce boredom and supports a balanced routine.
+</p>
+<p>
+It is important to adjust activity levels based on the pet’s age and energy. Younger animals may require more movement, while older pets may benefit from slower and shorter sessions. Observing how the pet responds to activity can help determine the appropriate level.
+</p>
+<p>
+Overexertion should be avoided. Signs such as excessive tiredness or discomfort indicate that the activity level may be too high. Keeping exercise moderate and consistent is usually the most practical approach.
+</p>
+<p>
+Daily activity does not need to be complicated. Simple, regular movement and interaction can contribute to a stable and comfortable lifestyle for pets.
+</p>
+
+<h3>5. Grooming and Hygiene</h3>
+<p>
+Grooming is an important part of maintaining a pet’s comfort and cleanliness. In Japan, where seasonal weather can vary, grooming routines may change throughout the year. Regular brushing, for example, can help manage shedding and keep the coat in good condition.
+</p>
+<p>
+Basic hygiene includes cleaning paws, checking fur, and ensuring that the pet’s living area remains tidy. These small actions can prevent discomfort and help identify potential issues early. For instance, noticing changes in the skin or coat during grooming may allow for quicker attention if needed.
+</p>
+<p>
+Bathing should be done with care. While it is necessary at times, bathing too frequently may cause dryness or irritation. Using products specifically designed for pets is important, as human products may not be suitable.
+</p>
+<p>
+Nail trimming and ear cleaning may also be part of a regular routine, depending on the type of pet. These tasks should be done gently and without causing stress. If unsure, consulting a professional may be helpful.
+</p>
+<p>
+Consistency in grooming helps pets become familiar with the process, making it easier over time. A calm approach and a steady routine can reduce anxiety and improve the overall experience.
+</p>
+<p>
+Maintaining hygiene is not about perfection but about regular care that supports comfort and well-being.
+</p>
+
+<h3>6. Understanding Pet Behavior</h3>
+<p>
+Pets communicate primarily through their behavior, and learning to observe these signals can improve the relationship between the pet and the owner. Changes in eating habits, activity levels, or general mood can indicate how a pet is feeling.
+</p>
+<p>
+In Japan, where many pets live indoors, behavior may be influenced by the home environment. Limited space, noise levels, and daily routines all play a role. Observing how a pet reacts to these factors can help owners make small adjustments when needed.
+</p>
+<p>
+Positive interaction is important. Calm communication and consistent responses can help build trust. Pets often respond well to predictable behavior from their owners.
+</p>
+<p>
+It is also important to recognize that each pet has its own personality. Some may be more active, while others prefer quiet environments. Understanding these differences helps create a more comfortable living situation.
+</p>
+<p>
+Behavioral changes should not be ignored. While not always serious, they can provide useful insight into a pet’s condition. Taking time to observe and understand these signals can lead to better care decisions.
+</p>
+<p>
+Patience is key when learning about behavior. Over time, owners can develop a better understanding of their pet’s needs through simple observation.
+</p>
+
+<h3>7. Visiting a Veterinarian</h3>
+<p>
+Regular visits to a veterinarian are an important part of responsible pet care. Even if a pet appears healthy, routine check-ups can help monitor general condition and detect any potential concerns early.
+</p>
+<p>
+In Japan, veterinary clinics are widely available, making access relatively convenient. Choosing a nearby clinic can make regular visits easier to manage, especially in case of urgent situations.
+</p>
+<p>
+Vaccinations, general health checks, and basic advice are commonly provided during visits. These services help maintain overall well-being and provide guidance tailored to the specific pet.
+</p>
+<p>
+It is important to follow professional advice when it comes to health-related matters. While general information can be helpful, a qualified veterinarian is best suited to provide specific recommendations.
+</p>
+<p>
+Preparing for visits can also make the experience smoother. Keeping records of feeding habits, behavior changes, or concerns can help provide useful information during consultations.
+</p>
+<p>
+Regular veterinary care is not about reacting to problems but about maintaining awareness and supporting long-term health.
+</p>
+
+<h3>8. Building a Consistent Routine</h3>
+<p>
+A consistent routine helps create stability for pets. Establishing regular times for feeding, activity, and rest can make daily care more manageable. In structured environments, such as many households in Japan, routines can fit naturally into daily schedules.
+</p>
+<p>
+Consistency does not mean rigidity. It is acceptable to make small adjustments when needed. The goal is to provide a general structure that pets can rely on without causing stress for the owner.
+</p>
+<p>
+Short, regular activities are often more effective than occasional long sessions. For example, consistent feeding times and brief daily interactions can be more beneficial than irregular, intensive efforts.
+</p>
+<p>
+Missing a day or adjusting a schedule is normal. Rather than focusing on perfection, it is better to return to the routine gradually. Flexibility supports long-term consistency.
+</p>
+<p>
+Over time, pets often adapt to their routine, making daily care easier and more predictable. This can improve comfort for both the pet and the owner.
+</p>
+<p>
+A balanced routine supports steady care without unnecessary pressure, making it a practical approach for everyday life.
+</p>
+
 </section>
 
-<section class="about">
-  <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b">
-  <div>
-    <h2>このスタジオについて</h2>
-    <p>呼吸と身体を整えるためのヨガスタジオです。初心者から経験者まで安心して通えます。</p>
-  </div>
+
+
+<section id="about" class="section">
+<h2>About Us</h2>
+<p>
+Petii.site is a simple informational website created and managed independently by Hiro Tosu. It is not operated by a company, organization, or registered business. This project was started as a personal effort to share basic knowledge about everyday pet care in a clear and approachable way.
+</p>
+<p>
+The content on this website is designed for individuals living in Japan who are looking for general guidance on caring for pets at home. Topics are based on common experiences and widely understood practices, presented in a way that is easy to read and apply in daily life.
+</p>
+<p>
+This website does not offer professional services, paid programs, or personalized advice. All information is provided for educational purposes only. While care has been taken to keep the content accurate and practical, pet care needs can vary depending on the situation, and readers are encouraged to make decisions based on their own circumstances.
+</p>
 </section>
 
-<section class="section">
-  <h2>レッスンの流れ</h2>
-  <div class="steps">
-    
-    <div class="step">
-      <img src="https://images.unsplash.com/photo-1524863479829-916d8e77f114" width="100%">
-      着替え
-    </div>
-    <div class="step">
-      <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773" width="100%">
-      レッスン参加
-    </div>
-  </div>
-</section>
+<section id="contact" class="section">
+<h2>Contact</h2>
 
-<section class="section">
-  <h2>クラスラインナップ</h2>
+<p>
+This website is independently created and managed by a single individual. If you have any general questions, feedback, or concerns related to the information shared on this site, you are welcome to reach out using the contact details below.
+</p>
 
-  <div class="class">
-    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b">
-    <div>朝ヨガ - 一日の始まりに最適</div>
-  </div>
+<p><strong>Name:</strong> Hiro Tosu</p>
+<p><strong>Phone:</strong> +81-80-6472-8896</p>
+<p><strong>Location:</strong> Osaka, Japan</p>
 
-  <div class="class">
-    <img src="https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b">
-    <div>リラックスヨガ - 心と体を整える</div>
-  </div>
+<p>
+Please note that this is a personal informational website and not a business or customer support service. Responses may not be immediate, but reasonable effort will be made to review messages when possible.
+</p>
 
-  <div class="class">
-    <img src="https://images.unsplash.com/photo-1599447332412-6bc6830c815a">
-    <div>ストレッチ - 柔軟性向上</div>
-  </div>
+<p>
+For privacy-related inquiries or questions about the content, you may use the phone number listed above. This contact method is provided only for communication related to this website.
+</p>
 
 </section>
 
-<section class="section">
-  <h2>Space & 質感</h2>
-  <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0">
-    <img src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3">
-  </div>
+<section id="privacy" class="section">
+<h2>Privacy Policy</h2>
+
+<p>
+At Petii.site, protecting visitor privacy is taken seriously. This website is independently created and managed by a single individual and is intended only for informational purposes. Users are not required to sign up, create an account, or provide personal details in order to access the content available on this site.
+</p>
+
+<p>
+When you visit this website, certain basic technical information may be collected automatically. This can include details such as your browser type, device type, approximate location, and general interaction with the website (for example, pages visited or time spent on the site). This information is collected through standard analytics tools and is used only to better understand how visitors use the website and to improve the overall content and user experience.
+</p>
+
+<p>
+Cookies may be used as part of normal website functionality. Cookies are small data files stored on your device that help websites operate more efficiently and remember certain preferences. You have the option to disable cookies at any time through your browser settings if you prefer not to allow them.
+</p>
+
+<p>
+This website may use third-party services such as Google Ads and analytics providers. These services may collect information in accordance with their own privacy policies and guidelines. Petii.site does not have direct control over how these third-party services process or store data. Users are encouraged to review the privacy policies of these external services for more detailed information about their practices.
+</p>
+
+<p>
+No sensitive personal information is intentionally collected, stored, or sold by this website. The purpose of any data collection is limited to improving website functionality and maintaining basic performance insights.
+</p>
+
+<p>
+Users have the right to raise questions or concerns regarding privacy. If you would like more information about how data may be handled on this website, you may contact the site owner using the phone number provided in the Contact section.
+</p>
+
+<p>
+By continuing to use this website, you acknowledge and agree to the terms described in this Privacy Policy.
+</p>
+
 </section>
 
-<section class="section">
-  <h2>インストラクター</h2>
-  <div class="cards">
-    <div class="card">
-      <img src="https://randomuser.me/api/portraits/women/44.jpg">
-      森田 綾
-    </div>
-    <div class="card">
-      <img src="https://randomuser.me/api/portraits/women/65.jpg">
-      佐藤 美咲
-    </div>
-    <div class="card">
-      <img src="https://randomuser.me/api/portraits/men/32.jpg">
-      中村 翔
-    </div>
-  </div>
+<section id="disclaimer" class="section">
+<h2>Disclaimer</h2>
+
+<p>
+The information available on this website is shared for general educational and informational purposes only. While efforts are made to keep the content clear and useful, it should not be considered a substitute for professional veterinary, medical, or specialist advice.
+</p>
+
+<p>
+Every pet has unique needs based on factors such as age, breed, health condition, and living environment. For this reason, the information provided here may not apply to every situation. If you have specific concerns about your pet’s health or behavior, it is recommended to consult a licensed veterinarian or a qualified professional in Japan.
+</p>
+
+<p>
+This website is independently created and managed by an individual, and the content reflects general knowledge and personal research rather than professional practice. No guarantees are made regarding outcomes, improvements, or results from applying any information found on this site.
+</p>
+
+<p>
+By using this website, you acknowledge that any actions you take based on the information provided are your own responsibility. The site owner is not liable for any outcomes related to the use or interpretation of the content.
+</p>
+
 </section>
 
-<section class="section">
-  <h2>参加者の声</h2>
-  <div class="cards">
-    <div class="card">とてもリラックスできました！</div>
-    <div class="card">初心者でも安心でした。</div>
-    <div class="card">空間が素敵です。</div>
-  </div>
-</section>
+</div>
 
-<section class="section">
-  <h2>まずは体験レッスンから</h2>
-  <button style="padding:10px 20px;border:none;background:#333;color:#fff;border-radius:20px;">
-    予約する
-  </button>
-</section>
 
-<footer>
-  <p>© LAZEN</p>
-</footer>
 
 </body>
 </html>
